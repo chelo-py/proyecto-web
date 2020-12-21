@@ -1,3 +1,8 @@
-h1 {
-  color: aqua;
+.site-header.inicio {
+  /*background: url(../img/header.jpg); se puede hacer de esta forma también*/
+  background-image: url(../img/header.jpg);
+  height: 100vh;
+  min-height: 600px;
+  background-position: center center;
+  background-size: cover;
 }
