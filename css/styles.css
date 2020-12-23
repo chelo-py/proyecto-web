@@ -17,6 +17,7 @@
   /*margin-top: 32px; margen que existe entre el elemento y lo que hay fuera del borde del contenido*/
   padding-top: 32px; /* margen que existe entre el borde y el elemento de adentro*/
   justify-content: space-between; /*espacio entre un elemento y otro*/
+  align-items: center; /* alinea de manera vertical ambos elementos, que estén en la misma línea */
 }
 
 /** Navegación **/
@@ -27,4 +28,15 @@
   text-decoration: none; /* suprime el: subrayado del texto */
   font-size: 18px; /* tamaño de fuente: 18 pixeles */
   margin-right: 20px; /* margen a la derecha: 20 pixeles */
+}
+/* La pseudo-clase :hover coincide cuando el usuario interactúa con un 
+   elemento con un dispositivo señalador, pero no necesariamente lo activa.
+  Generalmente se activa cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse) */
+.navegacion a:hover {
+  color: #71b100;
+}
+/*La pseudo-class :last-of-type representa 
+el último elemento de su tipo entre un grupo de elementos hermanos.*/
+.navegacion a:last-of-type {
+  margin: 0; /* el último elemento no tendrá margen derecho */
 }
