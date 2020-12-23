@@ -1,13 +1,17 @@
+html {
+  font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+}
 /* aplicaremos un estilo de fuente a todo dentro  del body 
   lato pertenece a google fonts
 */
 body {
   font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
 }
 
 /** Globales **/
 .contenedor {
-  max-width: 1200px;
+  max-width: 120rem; /** = 1200px **/
   margin: 0 auto;
 }
 /* Header */
@@ -15,14 +19,14 @@ body {
   /*background: url(../img/header.jpg); se puede hacer de esta forma también*/
   background-image: url(../img/header.jpg);
   height: 100vh;
-  min-height: 600px;
+  min-height: 60rem;
   background-position: center center;
   background-size: cover;
 }
 .barra {
   display: flex;
   /*margin-top: 32px; margen que existe entre el elemento y lo que hay fuera del borde del contenido*/
-  padding-top: 32px; /* margen que existe entre el borde y el elemento de adentro*/
+  padding-top: 3.2rem; /* margen que existe entre el borde y el elemento de adentro*/
   justify-content: space-between; /*espacio entre un elemento y otro*/
   align-items: center; /* alinea de manera vertical ambos elementos, que estén en la misma línea */
 }
@@ -33,8 +37,8 @@ body {
 .navegacion a {
   color: #ffffff; /* color al texto en blanco */
   text-decoration: none; /* suprime el: subrayado del texto */
-  font-size: 18px; /* tamaño de fuente: 18 pixeles */
-  margin-right: 20px; /* margen a la derecha: 20 pixeles */
+  font-size: 1.8rem; /** = 18px **/
+  margin-right: 2rem; /* margen a la derecha: 20 pixeles */
 }
 /* La pseudo-clase :hover coincide cuando el usuario interactúa con un 
    elemento con un dispositivo señalador, pero no necesariamente lo activa.
