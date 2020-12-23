@@ -10,6 +10,9 @@ body {
 }
 
 /** Globales **/
+img {
+  max-width: 100%;
+}
 .contenedor {
   max-width: 120rem; /** = 1200px **/
   margin: 0 auto;
@@ -99,4 +102,12 @@ el último elemento de su tipo entre un grupo de elementos hermanos.*/
 }
 .icono h3 {
   text-transform: uppercase; /* Convierte el texto en mayúsculas */
+}
+/** Anuncios **/
+.contenedor-anuncios {
+  display: flex;
+  justify-content: space-between;
+}
+.anuncio {
+  flex-basis: calc(33.3% - 1rem);
 }
