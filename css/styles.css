@@ -26,10 +26,21 @@ h3 {
 h4 {
   font-size: 2.6rem;
 }
+/** Utilidades **/
+.seccion {
+  margin-top: 2rem;
+  margin-bottom: 2.6rem;
+}
+.fw-300 {
+  font-weight: 300; /* espesura de la fuente */
+}
+.centrar-texto {
+  text-align: center;
+}
+
 /* Header */
 .site-header.inicio {
-  /*background: url(../img/header.jpg); se puede hacer de esta forma también*/
-  background-image: url(../img/header.jpg);
+  background-image: url(../img/header.jpg); /*background: url(../img/header.jpg); se puede hacer de esta forma también*/
   height: 100vh;
   min-height: 60rem;
   background-position: center center;
@@ -75,4 +86,17 @@ h4 {
 el último elemento de su tipo entre un grupo de elementos hermanos.*/
 .navegacion a:last-of-type {
   margin: 0; /* el último elemento no tendrá margen derecho */
+}
+.iconos-nosotros {
+  display: flex;
+}
+.icono {
+  flex-basis: calc(
+    33.3% - 1rem
+  ); /* define el ancho de los elementos, se usa a la par con flex */
+  text-align: center; /* Alineación de texto centrado */
+  line-height: 2;
+}
+.icono h3 {
+  text-transform: uppercase; /* Convierte el texto en mayúsculas */
 }
