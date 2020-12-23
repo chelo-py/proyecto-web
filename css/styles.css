@@ -1,3 +1,9 @@
+/** Globales **/
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Header */
 .site-header.inicio {
   /*background: url(../img/header.jpg); se puede hacer de esta forma también*/
   background-image: url(../img/header.jpg);
@@ -5,4 +11,20 @@
   min-height: 600px;
   background-position: center center;
   background-size: cover;
+}
+.barra {
+  display: flex;
+  /*margin-top: 32px; margen que existe entre el elemento y lo que hay fuera del borde del contenido*/
+  padding-top: 32px; /* margen que existe entre el borde y el elemento de adentro*/
+  justify-content: space-between; /*espacio entre un elemento y otro*/
+}
+
+/** Navegación **/
+/*lo primero viene a ser el nombre de la clase, que vendría a ser el padre
+  luego el "a" es el hijo de la clase "navegacion"*/
+.navegacion a {
+  color: #ffffff; /* color al texto en blanco */
+  text-decoration: none; /* suprime el: subrayado del texto */
+  font-size: 18px; /* tamaño de fuente: 18 pixeles */
+  margin-right: 20px; /* margen a la derecha: 20 pixeles */
 }
