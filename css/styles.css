@@ -66,11 +66,11 @@ h4 {
 }
 /* Header */
 .site-header.inicio {
-  background-image: url(../img/header.jpg); /*background: url(../img/header.jpg); se puede hacer de esta forma también*/
-  height: 100vh;
-  min-height: 60rem;
-  background-position: center center;
-  background-size: cover;
+  background-image: url(../img/header.jpg); /* imagen de fondo con su respectiva ruta */
+  height: 100vh; /* altura vh es la unidad de medida para vista por altura */
+  min-height: 60rem; /* altura mínima de 60rem */
+  background-position: center center; /* posición de la imagen de fondo */
+  background-size: cover; /* tamaño de la imagen */
 }
 .contenido-header {
   height: 100%; /** toma toda la altura del padre **/
@@ -152,4 +152,20 @@ el último elemento de su tipo entre un grupo de elementos hermanos.*/
 .ver-todas {
   display: flex;
   justify-content: flex-end;
+}
+/**Contacto Home **/
+.imagen-contacto {
+  background-image: url(../img/encuentra.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  align-items: center; /* alinea los elementos al centro en vertical */
+}
+.contenido-contacto {
+  color: #ffffff;
+  flex: 1; /* Factor de crecimiento, divide los pixeles por cada elemento, ejemplo: 1000/1 */
+}
+.contenido-contacto p {
+  font-size: 1.8rem;
 }
