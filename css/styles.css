@@ -1,11 +1,15 @@
 html {
+  box-sizing: border-box; /* nos sirve para que al instanciar un ancho no se sume a las proporciones del padding*/
   font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
 }
-/* aplicaremos un estilo de fuente a todo dentro  del body 
-  lato pertenece a google fonts
-*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /* nos sirve para que al instanciar un ancho no se sume a las proporciones del padding*/
+}
+/* aplicaremos un estilo de fuente a todo dentro  del body */
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif; /* lato pertenece a google fonts */
   font-size: 1.6rem;
 }
 
@@ -15,7 +19,7 @@ img {
 }
 .contenedor {
   max-width: 120rem; /** = 1200px **/
-  margin: 0 auto;
+  margin: 0 auto; /* podemos definir 4 parámetros, el primero para el margen superior, luego el derecho, el inferior y por último el izquierdo*/
 }
 h1 {
   font-size: 3.8rem; /* Tamaño de fuente */
@@ -40,7 +44,26 @@ h4 {
 .centrar-texto {
   text-align: center;
 }
-
+.d-block {
+  display: block !important; /* el important como su nombre lo dice, priorizará este estilo, cuando haya otro display más abajo no lo tomará en cuenta*/
+}
+/** Botones **/
+.boton {
+  display: inline-block; /* los enlaces por defecto llevan display in-line, para que la etiqueta responda a nuestro css debemos poner display: inline-block */
+  margin-top: 3rem; /* margen superior */
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.8rem; /* tamaño de fuente */
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 3rem; /* espacio entre el borde y el elemento interno */
+}
+.boton-verde {
+  background-color: #71b100; /* color de fondo */
+}
+.boton-naranja {
+  background-color: #e08709;
+}
 /* Header */
 .site-header.inicio {
   background-image: url(../img/header.jpg); /*background: url(../img/header.jpg); se puede hacer de esta forma también*/
@@ -75,7 +98,7 @@ h4 {
   luego el "a" es el hijo de la clase "navegacion"*/
 .navegacion a {
   color: #ffffff; /* color al texto en blanco */
-  text-decoration: none; /* suprime el: subrayado del texto */
+  text-decoration: none; /* none: suprime el subrayado del texto */
   font-size: 1.8rem; /** = 18px **/
   margin-right: 2rem; /* margen a la derecha: 20 pixeles */
 }
@@ -110,4 +133,23 @@ el último elemento de su tipo entre un grupo de elementos hermanos.*/
 }
 .anuncio {
   flex-basis: calc(33.3% - 1rem);
+  border: 1px solid #b5b5b5; /* Para el borde, el primer parámetro es el grosor, luego el estilo y por último el color **/
+  background-color: #f5f5f5; /* Color de fondo*/
+}
+.contenido-anuncio {
+  padding: 2rem; /* aplica padding a todas las direcciones */
+}
+.contenido-anuncio h3,
+.contenido-anuncio p {
+  padding: 1rem;
+  margin: 0;
+  line-height: 2;
+}
+.precio {
+  color: #71b100;
+  font-weight: 700;
+}
+.ver-todas {
+  display: flex;
+  justify-content: flex-end;
 }
