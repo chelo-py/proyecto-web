@@ -65,6 +65,10 @@ h4 {
   background-color: #e08709;
 }
 /* Header */
+.site-header {
+  background-color: #333333;
+  padding: 1rem 0 3rem 0;
+}
 .site-header.inicio {
   background-image: url(../img/header.jpg); /* imagen de fondo con su respectiva ruta */
   height: 100vh; /* altura vh es la unidad de medida para vista por altura */
@@ -90,9 +94,8 @@ h4 {
   /*margin-top: 32px; margen que existe entre el elemento y lo que hay fuera del borde del contenido*/
   padding-top: 3.2rem; /* margen que existe entre el borde y el elemento de adentro*/
   justify-content: space-between; /*espacio entre un elemento y otro*/
-  align-items: center; /* alinea de manera vertical ambos elementos, que estén en la misma línea */
+  align-items: center; /* alinea elementos de manera central */
 }
-
 /** Navegación **/
 /*lo primero viene a ser el nombre de la clase, que vendría a ser el padre
   luego el "a" es el hijo de la clase "navegacion"*/
@@ -153,6 +156,16 @@ el último elemento de su tipo entre un grupo de elementos hermanos.*/
   display: flex;
   justify-content: flex-end;
 }
+.iconos-caracteristicas {
+  list-style: none; /* nos referimos a las viñetas, con none utilizamos ninguna */
+  padding: 0; /* removemos el espaciado */
+  display: flex;
+  justify-content: space-evenly;
+}
+.iconos-caracteristicas li {
+  /*flex: 1;*/
+  display: flex;
+}
 /**Contacto Home **/
 .imagen-contacto {
   background-image: url(../img/encuentra.jpg);
@@ -168,4 +181,109 @@ el último elemento de su tipo entre un grupo de elementos hermanos.*/
 }
 .contenido-contacto p {
   font-size: 1.8rem;
+}
+/** Sección Inferior **/
+.seccion-inferior {
+  display: flex;
+  justify-content: space-between;
+}
+.seccion-inferior .blog {
+  flex-basis: 60%; /* especifica la anchura */
+}
+.seccion-inferior .testimoniales {
+  flex-basis: calc(40% - 2rem);
+}
+.entrada-blog {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.entrada-blog:last-of-type {
+  margin-bottom: 0; /* margen inferior */
+}
+.entrada-blog .imagen {
+  flex-basis: 40%;
+}
+.entrada-blog .texto-entrada {
+  flex-basis: calc(60% - 3rem);
+}
+.texto-entrada a {
+  color: black;
+  text-decoration: none;
+}
+.texto-entrada h4 {
+  margin: 0;
+  line-height: 1.4; /*interlineado */
+}
+.texto-entrada span {
+  color: #e08709;
+}
+/*Con doble dos puntos y after, creamos un pseudo elemento posterior al h4*/
+.texto-entrada h4::after {
+  content: ""; /* contenido*/
+  display: block; /* mostrar en bloques */
+  width: 15rem;
+  height: 0.5rem;
+  background-color: #71b100;
+  margin-top: 1rem;
+}
+.testimonial {
+  margin-left: 5rem;
+  width: 40rem;
+  background-color: #71b100;
+  font-size: 2.4rem;
+  color: #ffffff;
+  border-radius: 2rem; /*aplica bordes al elemento */
+  padding: 2rem;
+}
+.testimonial p {
+  text-align: right;
+}
+/* creamos un pseudoelemento antes del blockquote
+   posición absolute para el hijo */
+.testimonial blockquote::before {
+  content: "";
+  background-image: url(../img/comilla.svg);
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  left: -2rem;
+}
+/*Posición relative para el padre */
+.testimonial blockquote {
+  position: relative;
+  padding-left: 5rem;
+  font-weight: 300;
+}
+/** Footer **/
+.site-footer {
+  background-color: #333333;
+  margin-bottom: 0;
+}
+.contenedor-footer {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright {
+  margin: 0;
+  color: white;
+}
+/** Nosotros **/
+/**Nosotros Contenido**/
+.nosotros-contenido {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.nosotros-contenido .imagen {
+  flex-basis: 40%; /* controla el tamaño de la imagen */
+}
+.nosotros-contenido .texto-entrada {
+  flex-basis: calc(60% - 3rem);
+}
+/** Internas **/
+.contenido-nosotros {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
