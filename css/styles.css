@@ -270,20 +270,22 @@ el último elemento de su tipo entre un grupo de elementos hermanos.*/
   color: white;
 }
 /** Nosotros **/
-/**Nosotros Contenido**/
-.nosotros-contenido {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-}
 .nosotros-contenido .imagen {
   flex-basis: 40%; /* controla el tamaño de la imagen */
 }
-.nosotros-contenido .texto-entrada {
-  flex-basis: calc(60% - 3rem);
-}
+
 /** Internas **/
 .contenido-nosotros {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: grid; /* desplegar, tipo cuadrilla */
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /*modelo de tipo columna: repetir(cantidad columnas, nro de fracciones)*/
+  column-gap: 2rem; /*instancia el margen entre columnas*/
+}
+.texto-nosotros blockquote {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0;
+  padding: 2rem;
 }
