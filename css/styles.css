@@ -18,7 +18,7 @@ img {
   max-width: 100%;
 }
 .contenedor {
-  max-width: 120rem; /** = 1200px **/
+  max-width: 120rem; /**anchura máxima de 1200px **/
   margin: 0 auto; /* podemos definir 4 parámetros, el primero para el margen superior, luego el derecho, el inferior y por último el izquierdo*/
 }
 h1 {
@@ -47,6 +47,9 @@ h4 {
 .d-block {
   display: block !important; /* el important como su nombre lo dice, priorizará este estilo, cuando haya otro display más abajo no lo tomará en cuenta*/
 }
+.margen-superior {
+  margin-top: 2rem;
+}
 /** Botones **/
 .boton {
   display: inline-block; /* los enlaces por defecto llevan display in-line, para que la etiqueta responda a nuestro css debemos poner display: inline-block */
@@ -56,7 +59,7 @@ h4 {
   font-size: 1.8rem; /* tamaño de fuente */
   color: #ffffff;
   text-align: center;
-  padding: 1rem 3rem; /* espacio entre el borde y el elemento interno */
+  padding: 1rem 3rem; /* espacio entre el borde y el elemento interno 1 rem arriba y abajo 3 rem a los costados */
 }
 .boton-verde {
   background-color: #71b100; /* color de fondo */
