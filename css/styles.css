@@ -59,6 +59,12 @@ h4 {
 .eliminar-margen-superior {
   margin-top: 0;
 }
+.mw-40 {
+  max-width: 40rem;
+}
+.interlineado {
+  line-height: 3rem;
+}
 /** Botones **/
 .boton {
   display: inline-block; /* los enlaces por defecto llevan display in-line, para que la etiqueta responda a nuestro css debemos poner display: inline-block */
