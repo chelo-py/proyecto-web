@@ -34,6 +34,12 @@ h4 {
   font-size: 2.6rem;
 }
 /** Utilidades **/
+.centrar-elementos {
+  align-items: center;
+}
+.margen-interior-total {
+  margin: 2rem;
+}
 .seccion {
   margin-top: 2rem;
   margin-bottom: 2.6rem;
@@ -133,6 +139,16 @@ el último elemento de su tipo entre un grupo de elementos hermanos.*/
   text-transform: uppercase; /* Convierte el texto en mayúsculas */
 }
 /** Anuncios **/
+.imagen-anuncio {
+  height: 100vh; /* altura vh es la unidad de medida para vista por altura */
+  min-height: 60rem; /* altura mínima de 60rem */
+  background-position: center center; /* posición de la imagen de fondo */
+  background-size: cover; /* tamaño de la imagen */
+}
+.contenedor-anuncio-estrecho {
+  max-width: 90rem;
+  margin: 0 auto;
+}
 .contenedor-anuncios {
   display: flex;
   justify-content: space-between;
@@ -144,6 +160,14 @@ el último elemento de su tipo entre un grupo de elementos hermanos.*/
 }
 .contenido-anuncio {
   padding: 2rem; /* aplica padding a todas las direcciones */
+}
+.contenido-anuncio-dos {
+  padding: 0rem;
+}
+.contenido-anuncio-dos p {
+  padding: 1rem;
+  margin: 0;
+  line-height: 2;
 }
 .contenido-anuncio h3,
 .contenido-anuncio p {
@@ -168,6 +192,18 @@ el último elemento de su tipo entre un grupo de elementos hermanos.*/
 .iconos-caracteristicas li {
   /*flex: 1;*/
   display: flex;
+}
+.iconos-caracteristicas p {
+  margin-left: 2rem;
+}
+.iconos-caracteristicas-anuncio {
+  list-style: none; /* nos referimos a las viñetas, con none utilizamos ninguna */
+  padding: 1rem; /* removemos el espaciado */
+  display: flex;
+  justify-content: space-between;
+}
+.iconos-caracteristicas-anuncio li {
+  margin-right: 5rem;
 }
 /**Contacto Home **/
 .imagen-contacto {
