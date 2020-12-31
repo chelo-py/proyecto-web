@@ -56,6 +56,9 @@ h4 {
 .margen-superior {
   margin-top: 2rem;
 }
+.eliminar-margen-superior {
+  margin-top: 0;
+}
 /** Botones **/
 .boton {
   display: inline-block; /* los enlaces por defecto llevan display in-line, para que la etiqueta responda a nuestro css debemos poner display: inline-block */
@@ -327,4 +330,13 @@ el último elemento de su tipo entre un grupo de elementos hermanos.*/
   font-weight: 900;
   margin: 0;
   padding: 2rem;
+}
+/** Blog **/
+.contenedor-blog {
+  max-width: 130rem;
+  margin: 2rem 30rem;
+}
+.columna-blog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
